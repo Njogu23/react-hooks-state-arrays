@@ -10,7 +10,7 @@ function SpicyFoodList() {
       if(filterBy === "All") {
         return true
       }else {
-        return  filterBy === food.cuisine
+        return filterBy === food.cuisine
       }
 
     })
@@ -62,12 +62,13 @@ function SpicyFoodList() {
         <ul>{foodList}</ul>
       </div>
       <select name="filter" onClick={handleChange}>
-        <option value="All" id="">All</option>
-        <option value="American" id={2}>American</option>
-        <option value="Sichuan" id={1} >Sichuan</option>
-        <option value="Thai" id={3}>Thai</option>
-        <option value="Mexican" id={4}>Mexican</option>
+        <option value="All">All</option>
+        <option value="American">American</option>
+        <option value="Sichuan">Sichuan</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Thai">Thai</option>
       </select>
+      
     </>
    
   );
